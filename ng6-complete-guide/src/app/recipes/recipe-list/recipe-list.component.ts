@@ -10,7 +10,9 @@ export class RecipeListComponent implements OnInit {
 
   recipes: Recipe[] = [
     new Recipe('A Test Recipe', 'This is simply a Test',
-      'https://www.slenderkitchen.com/sites/default/themes/slender_kitchen_theme/images/slide/slenderkitchen-meal-plan-recipe-c.png')
+      'https://familynutrition.co.uk/wp-content/uploads/2014/06/Recipe-icon.png'),
+    new Recipe('A Test Recipe', 'This is simply a Test',
+      'https://familynutrition.co.uk/wp-content/uploads/2014/06/Recipe-icon.png')
   ];
 
   constructor() { }
