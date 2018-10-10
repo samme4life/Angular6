@@ -3,8 +3,11 @@
   <div class="panel-heading">{{ element.name }}</div>
   <div class="panel-body">
     <p>
+      {{element.type}}
+    </p>
+    <p>
       <strong *ngIf="element.type === 'server'" style="color: red">{{ element.content }}</strong>
-      <em *ngIf="element.type === 'blueprint'">{{ element.content }}</em>
+      <em *ngIf="element.type === 'blueprint'" >{{ element.content }}</em>
     </p>
   </div>
 </div>
