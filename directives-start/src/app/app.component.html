@@ -1,12 +1,12 @@
 <div class="container">
   <div class="row">
-    <p class="col-xs-12">
+    <div class="col-xs-12">
       <button
         class="btn btn-primary"
         (click)="onlyOdd = !onlyOdd">Only show odd numbers</button>
       <br><br>
       <ul class="list-group">
-        <div *ngIf="onlyOdd">
+        <div *appUnless="!onlyOdd">
           <li
             class="list-group-item"
             *ngFor="let odd of oddNumbers"
@@ -15,7 +15,7 @@
           </li>
           {{onlyOdd}}
         </div>
-        <div *ngIf="!onlyOdd">
+        <div *appUnless="onlyOdd">
           <li
             class="list-group-item"
             *ngFor="let even of evenNumbers"
@@ -33,5 +33,7 @@
         This is to check Basic Highlight Directive
       </p>
     </div>
+  </div>
 </div>
+
 
