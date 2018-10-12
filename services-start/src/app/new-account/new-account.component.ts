@@ -6,14 +6,13 @@ import {AccountService} from '../shared/account.service';
   selector: 'app-new-account',
   templateUrl: './new-account.component.html',
   styleUrls: ['./new-account.component.css'],
-  providers: [LoggingService]
+  providers: []
 })
 export class NewAccountComponent {
 
-  constructor(private loggingService: LoggingService, private accountService: AccountService) { }
+  constructor(private accountService: AccountService) { }
 
   onCreateAccount(accountName: string, accountStatus: string) {
     this.accountService.addAccount(accountName, accountStatus);
-    this.loggingService.logStatusChange('halloooo A server status changed, new status: ' + accountStatus);
   }
 }
