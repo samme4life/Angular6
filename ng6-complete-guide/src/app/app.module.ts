@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {HeaderComponent} from "./header/header.component";
-import { RecipesComponent } from './recipes/recipes.component';
+import { RecipeComponent } from './recipes/recipe.component';
 import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
 import { RecipeDetailsComponent } from './recipes/recipe-details/recipe-details.component';
 import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-item.component';
@@ -16,7 +16,7 @@ import {DropdownDirective} from "./shared/dropdown.directive";
   declarations: [
     AppComponent,
     HeaderComponent,
-    RecipesComponent,
+    RecipeComponent,
     RecipeListComponent,
     RecipeDetailsComponent,
     RecipeItemComponent,
