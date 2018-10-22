@@ -12,9 +12,15 @@ export class AppComponent {
   defaultQuestion = 'teacher';
   defaultUsername = 'akain';
   answer = '';
+  genders = ['male', 'female', 'other'];
 
   suggestUserName() {
     const suggestedName = 'Superuser';
+    this.signupForm.form.patchValue({
+      userData: {
+        username: suggestedName
+      }
+    });
   }
 
   // onSubmit(form: NgForm) {
